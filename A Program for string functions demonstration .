@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <string.h>
+#include<process.h>
+int main() 
+{
+int choice;
+char s1[20],s2[20];
+printf("enter string 1 ");
+gets(s1);
+printf("enter string 2 ");
+gets(s2);
+do
+{
+printf("\nenter 1 for string concatenation function\nenter 2 for string length function\nenter 3 for string copy function\nenter 4 to EXIT\n");
+scanf("%d",&choice);
+switch(choice)
+{
+case 1:    	strcat(s1, s2);
+  			printf("Output string after concatenation: %s\n", s1);
+  			break;
+  			
+case 2:     printf("Length of string string3: %ld\n", strlen(s2));
+  			break;		
+case 3:  	strcpy(s1, s2);  
+  			printf("String s1 is: %s\n", s1); 
+			break;
+case 4: exit(0);
+}
+}
+while(choice!=5);
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
